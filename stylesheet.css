@@ -1,0 +1,179 @@
+/* font-family: 'Bebas Neue', cursive;
+font-family: 'Inter', sans-serif; */
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+}
+
+body h1 {
+  color: white;
+  font-family: "Bebas Neue", cursive;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.frame {
+  position: relative;
+  background: url("track.png");
+  height: 250px;
+  width: 250px;
+  overflow: hidden;
+}
+
+.car {
+  background: url("car.png") center center / cover no-repeat;
+  height: 30px;
+  width: 81px;
+  position: absolute;
+  animation: 1s drive linear infinite;
+  image-rendering: pixelated;
+  z-index: 4;
+}
+
+.smoke {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+}
+
+.pointer {
+  border: 3px solid royalblue;
+  z-index: 1000;
+  position: absolute;
+}
+
+.pointer1 {
+  transform: translateX(295px) translateY(139px) rotateZ(200deg);
+}
+.pointer1-12-1 {
+  transform: translateX(275px) translateY(131px) rotateZ(195deg);
+}
+.pointer1-25 {
+  transform: translateX(255px) translateY(126px) rotateZ(190deg);
+}
+.pointer1-12-2 {
+  transform: translateX(235px) translateY(121px) rotateZ(185deg);
+}
+.pointer1-5 {
+  transform: translateX(215px) translateY(120px) rotateZ(180deg);
+}
+.pointer1-12-3 {
+  transform: translateX(192px) translateY(121px) rotateZ(175deg);
+}
+.pointer1-75 {
+  transform: translateX(170px) translateY(125px) rotateZ(160deg);
+}
+.pointer1-12-4 {
+  transform: translateX(153px) translateY(133px) rotateZ(150deg);
+}
+.pointer2 {
+  transform: translateX(140px) translateY(143px) rotateZ(130deg);
+}
+.pointer1-12-5 {
+  transform: translateX(127px) translateY(160px) rotateZ(120deg);
+}
+.pointer2-25 {
+  transform: translateX(120px) translateY(180px) rotateZ(90deg);
+}
+.pointer1-12-6 {
+  transform: translateX(118px) translateY(202px) rotateZ(80deg);
+}
+.pointer2-5 {
+  transform: translateX(120px) translateY(225px) rotateZ(70deg);
+}
+.pointer1-12-7 {
+  transform: translateX(124px) translateY(243px) rotateZ(60deg);
+}
+.pointer2-75 {
+  transform: translateX(130px) translateY(260px) rotateZ(50deg);
+}
+.pointer1-12-8 {
+  transform: translateX(136px) translateY(275px) rotateZ(55deg);
+}
+.pointer3 {
+  transform: translateX(143px) translateY(290px) rotateZ(60deg);
+}
+
+.curvature {
+  height: 270px;
+  width: 550px;
+  z-index: 1000;
+  border: 1px solid red;
+  border-radius: 50%;
+  transform: rotateZ(40deg) translateX(180px) translateY(100px);
+}
+
+@keyframes drive {
+  0% {
+    transform: translateX(295px) translateY(139px) rotateZ(200deg);
+  }
+  6% {
+    transform: translateX(275px) translateY(131px) rotateZ(195deg);
+  }
+  12% {
+    transform: translateX(255px) translateY(126px) rotateZ(190deg);
+  }
+  18% {
+    transform: translateX(235px) translateY(121px) rotateZ(185deg);
+  }
+  25% {
+    transform: translateX(215px) translateY(120px) rotateZ(180deg);
+  }
+  31% {
+    transform: translateX(192px) translateY(121px) rotateZ(175deg);
+  }
+  37% {
+    transform: translateX(170px) translateY(125px) rotateZ(160deg);
+  }
+  42% {
+    transform: translateX(153px) translateY(133px) rotateZ(150deg);
+  }
+  50% {
+    transform: translateX(140px) translateY(143px) rotateZ(130deg);
+  }
+  56% {
+    transform: translateX(127px) translateY(160px) rotateZ(120deg);
+  }
+  62% {
+    transform: translateX(120px) translateY(180px) rotateZ(90deg);
+  }
+  68% {
+    transform: translateX(118px) translateY(202px) rotateZ(80deg);
+  }
+  75% {
+    transform: translateX(120px) translateY(225px) rotateZ(70deg);
+  }
+  81% {
+    transform: translateX(124px) translateY(243px) rotateZ(60deg);
+  }
+  87% {
+    transform: translateX(130px) translateY(260px) rotateZ(50deg);
+  }
+  93% {
+    transform: translateX(136px) translateY(275px) rotateZ(55deg);
+  }
+  100% {
+    transform: translateX(143px) translateY(290px) rotateZ(60deg);
+  }
+}
+
+.textsInfo {
+  padding: 1rem;
+  color: white;
+  font-family: "Inter", sans-serif;
+}
+.textsInfo p {
+  text-align: center;
+}
+
+.textsInfo h1 {
+  color: #f0db4f;
+}
